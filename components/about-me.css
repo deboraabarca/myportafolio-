@@ -1,0 +1,23 @@
+.about__me {
+  justify-content: center;
+}
+.about__me-img {
+  animation: perfil__animation 8s ease-in-out infinite;
+  background-image: url('../src/img/debora.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 180px;
+  width: 200px;
+}
+
+.about__me-right-side {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__me-container {
+    grid-template-columns: 2fr 1fr;
+  }
+}

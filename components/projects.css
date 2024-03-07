@@ -1,0 +1,19 @@
+.projects {
+  justify-content: center;
+}
+
+.projects__card {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .projects__card { 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .projects__left-side img {
+    max-width: 300px;
+  }
+}

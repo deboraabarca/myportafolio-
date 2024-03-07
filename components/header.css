@@ -1,0 +1,38 @@
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__nav {
+  max-width: 18%;
+  width: 15%;
+}
+
+.nav__list {
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.nav__item {
+  padding-right: 8px;
+}
+
+.nav__link {
+  background-color: var(--soft-green);
+  color: var(--white);
+  font-size: 22px;
+  padding: 14px;
+}
+
+.nav__link:hover {
+  transition: all .8s ease-in-out;
+  background-color: var(--soft-purple);
+  animation: vibrate__animation 0.3s linear infinite both;
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav__list {
+    flex-direction: row;
+  }
+}
