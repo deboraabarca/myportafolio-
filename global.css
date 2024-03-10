@@ -1,0 +1,137 @@
+@import url('./components/button.css');
+@import url('./components/animations.css');
+@import url('./components/home.css');
+@import url('./components/header.css');
+@import url('./components/about-me.css');
+@import url('./components/curriculum.css');
+@import url('./components/projects.css');
+@import url('./components/skills.css');
+@import url('./components/education.css');
+@import url('./components/more.css');
+
+
+:root {
+    /* colors */
+    --soft-purple: #ddddff;
+    --soft-pink: #f7d9ff;
+    --soft-green: #a6f6d5;
+    /* neutral */
+    --white: #f8f8ff;
+    --black: #121212;
+    --dark-gray: #393535;
+
+    /* font and typography */
+    --body-font: "Poppins", sans-serif;
+
+    /* font weight */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /* font size */
+    --big-title: 45px;
+    --title: 32px;
+    --sub-title: 22px;
+    --text: 16px;
+
+    /* box-shadow */
+    --shadow: rgba(14, 30, 37, 0.02) 0px 1px 2px 0px, rgba(14, 30, 37, 0.12) 0px 1px 8px 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        /* font size */
+        --text: 18px;
+    }
+}
+
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--soft-purple);
+    font-family: var(--body-font);
+    color: var(--dark-gray);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.md-rounded {
+    border-radius: 1rem;
+}
+
+.lg-rounded {
+    border-radius: 2rem;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+/* text */
+.text-center {
+    text-align: center;
+}
+
+.big__title {
+    font-weight: var(--font-bold);
+    font-size: var(--big-title);
+    letter-spacing: 4px;
+ }
+
+
+.title {
+    font-weight: var(--font-medium);
+    font-size: var(--title);
+    margin-bottom: 16px;
+}
+
+.sub__title {
+    font-weight: var(--font-medium);
+    font-size: var(--sub-title);
+    margin-bottom: 12px;
+}
+
+.text {
+    font-weight: var(--font-normal);
+    font-size: var(--text);
+}
+
+.date {
+    font-weight: var(--font-bold);
+    font-size: var(--text);
+    margin-bottom: 1rem;
+}

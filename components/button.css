@@ -1,0 +1,21 @@
+.btn {
+  padding: 1.25rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.btn__primary {
+  background-color: var(--soft-green);
+}
+
+.btn__secondary {
+
+}
+
+.btn--flex {
+  align-items: center;
+  display: inline-flex;
+}
+
+.btn__icon {
+  margin-left: .5rem;
+}

@@ -1,0 +1,39 @@
+.more {
+  place-content: center;
+
+}
+
+.more__icon {
+  font-size: 50px;
+}
+.hobbie-item{
+  background-color:(--soft-pink);
+}
+
+.hobbies__container {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.7rem;
+  grid-template-areas: 
+    "hobbies"
+    "guitar"
+    "write"
+    "paint";
+}
+@media only screen and (min-width: 768px) {
+  .hobbies__container {
+    gap: 2rem;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "hobbies hobbies "
+      "guitar guitar "
+      "write paint" ;
+
+    padding: 2rem;
+  }
+  .hobbies-title{
+    text-align: center;
+  }
+}

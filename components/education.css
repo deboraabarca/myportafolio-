@@ -1,0 +1,16 @@
+.education {
+  justify-content: center;
+}
+.education__container {
+  row-gap: 1rem;
+}
+
+.education__title {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .education__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
